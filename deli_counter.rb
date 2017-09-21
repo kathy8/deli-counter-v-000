@@ -8,7 +8,7 @@ def line(katz_deli)
     katz_deli.each_with_index do |name, index|
       count << (" #{index+1}. #{name}")
     end
-    puts "The line is currently:" +count.join
+    puts "The line is currently:" + count.join
   end
 end
 
