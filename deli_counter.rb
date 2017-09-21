@@ -12,5 +12,17 @@ def line(katz_deli)
   end
 end
 
+def take_a_number(katz_deli, name)
+  katz_deli << name
+  number = katz_deli.lengthputs "Welcome, #{name}. You are number #{number}in line."
+end
 
-  
+def now_serving(katz_deli)
+  if katz_deli.length == 0
+    puts "There is nobody waiting to be served!"
+  else katz_deli.length > 1
+    name = katz_deli.first
+    puts"Currently serving #{name}."
+katz_deli.shift
+end
+end  
